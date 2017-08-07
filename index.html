@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <title>HANGRY NO MAS</title>
+</head>
+
+<body>
+  <div class="page-container">
+    <header>
+      <div class="logo-container">
+        <img src="GraphicDesign.png" alt="HNM-logo">
+      </div>
+    </header>
+    <div class="main-container">
+      <form class="" action="" method="post">
+        <div id="input-form">
+          <select class="cuisine">
+        <option value="default" disabled selected >What would you like?</option>
+        <optgroup label="Meal Type">
+          <option value="breakfast_brunch">Breakfast &amp; Brunch</option>
+          <option value="casual+lunch">Casual Lunch</option>
+          <option value="dinner">Boojie Dinner</option>
+          <option value="fast+food">Hangover Grubs</option>
+        </optgroup>
+        <optgroup label="Non-basic Eats">
+          <option value="thai">Thai</option>
+          <option value="italian">Italian</option>
+          <option value="tapas">Tapas</option>
+          <option value="japanese">Japanese</option>
+          <option value="mexican+food">Mexican</option>
+        </optgroup>
+        <optgroup label="The Good Stuff">
+          <option value="desserts">Desserts</option>
+          <option value="coffee">Coffee</option>
+          <option value="breweries">Breweries</option>
+          <option value="bars">Bars</option>
+        </optgroup>
+      </select>
+          <input type="text" name="zip" value="ZIP Code" id="zip">
+          <br>
+          <select class="radius" id="radius">
+              <option value="default" disabled selected>Radius to search</option>
+                <option value="5">5 miles</option>
+                <option value="10">10 miles</option>
+                <option value="15">15 miles</option>
+                <option value="20">20 miles</option>
+      </select>
+          <button id="submit" type="button" name="button">Submit</button>
+        </div>
+      </form>
+
+      <div class="wheel-container">
+        <p class="z-depth-5"><button class="btn waves-effect waves-light blue darken-1" type="submit" name="action" id="spin">SPIN
+    </button></p>
+        <canvas id="canvas" width="500" height="500"></canvas>
+      </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

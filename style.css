@@ -1,0 +1,68 @@
+* {
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  background-color: #FFFAE3;
+  font-family: 'Playfair Display', serif;
+
+}
+
+.page-container {
+  max-width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+#input-form {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+select {
+  margin-bottom: 1em;
+}
+
+#zip {
+  margin-bottom: -0.5em;
+  text-align: center;
+
+}
+
+#radius {
+  margin-bottom: 1em;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wheel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+
+}
+
+#spin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #gray;
+  height: 3em !important;
+  width: 7em !important;
+  margin-bottom: -3em;
+}
+
+#canvas {
+  align-self: center;
+  max-width: 100
+}
