@@ -62,7 +62,7 @@ function drawRouletteWheel() {
     ctx.strokeStyle = "white";
     ctx.lineWidth = 0.5;
 
-    ctx.font = 'bold 18px Oswald sans-serif';
+    ctx.font = 'bold 16px Oswald sans-serif';
 
     for (var i = 0; i < options.length; i++) {
       var angle = startAngle + i * arc;
@@ -86,7 +86,12 @@ function drawRouletteWheel() {
       //Make text values in-line with panels
       ctx.translate(0, ctx.measureText(text).width / 4) //move text towards or away from inner radius
       ctx.rotate(Math.PI / 2)
-      ctx.fillText(text, -ctx.measureText(text).width / 2, 0);
+      if (text.length < 16) {
+        ctx.fillText(text, -ctx.measureText(text).width / 2, 0);
+      } else {
+        var short = text.slice(0,15)
+        ctx.fillText(short, -ctx.measureText(short).width / 2, 0);
+      }
       ctx.restore();
     }
 
@@ -133,10 +138,17 @@ function stopRotateWheel() {
   ctx.font = 'bold 30px Helvetica, Arial';
   // output of choice of restaurant
   var text = options[index]
-  alert('Congrats! Now go eat at ' + text)
+  showResults();
+  // alert('Congrats! Now go eat at ' + text)
   // Fill text in center of wheel
   // ctx.fillText(text, 250 - ctx.measureText(text).width / 2, 250 + 10);
   // ctx.restore();
+}
+
+function showResults(text) {
+  $('.wheel-container').hide();
+  // $('.choice').text() = text;
+  $('.results').show();
 }
 
 function easeOut(t, b, c, d) {
@@ -149,12 +161,32 @@ function milesToMeters(miles) {
   return miles * 1609
 }
 
-drawRouletteWheel();
+$('#directions').on("click", function() {
+  window.location.href = "http://www.googlemaps.com/"
+})
+
+$('#respin').on("click", function () {
+  window.location.href = "/index.html"
+})
+
+
+// function resetForm() {
+//   $('#zip').val(function() {
+//     return this.defaultValue;
+//   })
+// }
+
+// drawRouletteWheel();
 
 $(window).on("load", function() {
 
   var topFood = []
   var web = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term="
+
+
+  $('#zip').focus(function() {
+    $('#zip').val("")
+  })
 
   $('#submit').on('click', function(event) {
     event.preventDefault();
@@ -178,7 +210,11 @@ $(window).on("load", function() {
         for (var i = 0; i < 10; i++) {
           options[i] = topFood[i]
         }
-        drawRouletteWheel()
+        $('#input-form').fadeOut(500)
+        $('#spin').fadeIn(1000)
+        var slowww = drawRouletteWheel();
+        slowww.fadeIn(2000)
+
       }
     })
   })

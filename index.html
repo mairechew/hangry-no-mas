@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <title>HANGRY NO MAS</title>
 </head>
@@ -14,10 +15,10 @@
   <div class="page-container">
     <header>
       <div class="logo-container">
-        <img src="GraphicDesign.png" alt="HNM-logo">
+        <img src="HNM_big_logo.png" alt="HNM-logo">
       </div>
     </header>
-    <div class="main-container">
+    <div class="animated fadeInLeft main-container">
       <form class="" action="" method="post">
         <div id="input-form">
           <select class="cuisine">
@@ -42,7 +43,7 @@
           <option value="bars">Bars</option>
         </optgroup>
       </select>
-          <input type="text" name="zip" value="ZIP Code" id="zip">
+          <input type="text" name="zip" value="ZIP Code" id="zip" maxlength="5" autocomplete="off">
           <br>
           <select class="radius" id="radius">
               <option value="default" disabled selected>Radius to search</option>
@@ -56,10 +57,18 @@
       </form>
 
       <div class="wheel-container">
-        <p class="z-depth-5"><button class="btn waves-effect waves-light blue darken-1" type="submit" name="action" id="spin">SPIN
+        <p class="z-depth-5"><button class="btn waves-effect waves-light blue darken-1 myButton" type="submit" name="action" id="spin">SPIN
     </button></p>
         <canvas id="canvas" width="500" height="500"></canvas>
       </div>
+    </div>
+
+    <div class="results">
+      <h1><em>Congratulations!</em>
+      <br>You are now entering the world of Hangry No Mas!</h1>
+      <h2 class="choice">You're going to Taco Bell! No questions asked!</h2>
+      <button class="final-buttons" type="button" name="button" id="directions">Need directions?</button>
+      <button class="final-buttons" type="button" name="button" id="respin">Spin again!</button>
     </div>
 
 
