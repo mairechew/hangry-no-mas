@@ -1,4 +1,4 @@
-# Project Title
+# Hangry No Mas
 
 Hangry No Mas is an interactive restaurant decision-making game that searches by zip code and meal of choice (breakfast/lunch/dinner/snacks or cuisine), places options on a spinning wheel and allows the user to "spin" the wheel. 
 After pressing "spin", the wheel returns a random choice and congratulations the user on making a decision. 
