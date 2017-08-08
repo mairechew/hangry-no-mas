@@ -129,6 +129,8 @@ function rotateWheel() {
   spinTimeout = setTimeout('rotateWheel()', 10);
 }
 
+var restaurant;
+
 function stopRotateWheel() {
   clearTimeout(spinTimeout);
   var degrees = startAngle * 180 / Math.PI + 90;
@@ -138,18 +140,20 @@ function stopRotateWheel() {
   ctx.font = 'bold 30px Helvetica, Arial';
   // output of choice of restaurant
   var text = options[index]
-  showResults();
+  $('.wheel-container').hide();
+  var answer = "You're going to " + text + "! No questions asked!"
+  restaurant = answer;
+  $('.choice').text(answer)
+  $('.results').show();
+
   // alert('Congrats! Now go eat at ' + text)
   // Fill text in center of wheel
   // ctx.fillText(text, 250 - ctx.measureText(text).width / 2, 250 + 10);
   // ctx.restore();
 }
 
-function showResults(text) {
-  $('.wheel-container').hide();
-  // $('.choice').text() = text;
-  $('.results').show();
-}
+
+
 
 function easeOut(t, b, c, d) {
   var ts = (t /= d) * t;
@@ -161,14 +165,13 @@ function milesToMeters(miles) {
   return miles * 1609
 }
 
-$('#directions').on("click", function() {
-  window.location.href = "http://www.googlemaps.com/"
-})
+// $('#directions').on("click", function() {
+//   window.location.href = "http://www.googlemaps.com/search?=" + restaurant;
+// })
 
 $('#respin').on("click", function () {
-  window.location.href = "/index.html"
+  window.location.href = "file:///Users/mairechew/Desktop/Galvanize%20WDI/Unit%201/decision-wheel2.0/index.html"
 })
-
 
 // function resetForm() {
 //   $('#zip').val(function() {
@@ -212,8 +215,7 @@ $(window).on("load", function() {
         }
         $('#input-form').fadeOut(500)
         $('#spin').fadeIn(1000)
-        var slowww = drawRouletteWheel();
-        slowww.fadeIn(2000)
+        drawRouletteWheel();
 
       }
     })
