@@ -4,6 +4,12 @@ Hangry No Mas is an interactive restaurant decision-making game that searches by
 After pressing "spin", the wheel returns a random choice and congratulations the user on making a decision. 
 The user is also allowed to play again, which returns to the initial screen of collecting choice preferences. 
 
+## Screenshots
+![HNM1](/HNM-screenshot1.png?raw=true "Home page & User Input")
+![HNM2](/HNM-screenshot2.png?raw=true "Spinning Wheel")
+![HNM3](/HNM-screenshot3.png?raw=true "Decision made")
+
+
 ## Live Demo
 
 View a live demo here: https://youtu.be/ck3EixPbkRw
