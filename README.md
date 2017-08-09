@@ -6,9 +6,6 @@ The user is also allowed to play again, which returns to the initial screen of c
 
 ## Screenshots
 ![HNM1](/HNM-screenshot1.png?raw=true "Home page & User Input")
-![HNM2](/HNM-screenshot2.png?raw=true "Spinning Wheel")
-![HNM3](/HNM-screenshot3.png?raw=true "Decision made")
-
 
 ## Live Demo
 
