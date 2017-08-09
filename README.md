@@ -58,5 +58,5 @@ Give an example
 ## Acknowledgments
 
 * Hat tip to CodePen user Barney Parker for providing the base code and functionality to the spinning wheel
-* Shoutout to any indecisive foodie that might have a hard time making these crucial decisions regularly. :)
+* Shoutout to any indecisive foodie that might have a hard time making these crucial decisions regularly :)
 
