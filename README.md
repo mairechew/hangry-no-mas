@@ -11,7 +11,7 @@ Foodies / restaurant go-ers spend far too much time deliberating over where to e
 The pressure and time lost over making a simple decision as where to eat is an issue. 
 
 ## Hypothesis
-If we provide an interactive, easy-to-use spinning wheel that chooses a restaurant for the user then prevent time lost during the day because users would rather spend time doing other activities than deciding where to eat.
+If we provide an interactive, easy-to-use spinning wheel that chooses a restaurant for the user we can prevent time lost during the day because users would rather spend time doing other activities than deciding where to eat.
 
 ## Wireframes
 ![HNM-wirerame](https://github.com/mairechew/hangry-no-mas/blob/master/HNM-wireframe.png)
