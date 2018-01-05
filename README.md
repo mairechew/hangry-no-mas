@@ -16,7 +16,8 @@ If we provide an interactive, easy-to-use spinning wheel that chooses a restaura
 ## Wireframes
 ![HNM-wirerame](https://github.com/mairechew/hangry-no-mas/blob/master/HNM-wireframe.png)
 
-## Iterations on Approach [What does the user see while the decision is being made?]
+## Iterations on Approach 
+### What does the user see while the decision is being made?
 1. Randomly pick a restaurant and redirect to text 
 2. Use a 'loading' animation
 
