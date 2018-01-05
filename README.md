@@ -16,13 +16,21 @@ If we provide an interactive, easy-to-use spinning wheel that chooses a restaura
 ## Wireframes
 ![HNM-wirerame](https://github.com/mairechew/hangry-no-mas/blob/master/HNM-wireframe.png)
 
+## Iterations on Approach [What does the user see while the decision is being made?]
+1. Randomly pick a restaurant and redirect to text 
+2. Use a 'loading' animation
+
 ## Execution / Live Demo
 
 ![HNM1](https://github.com/mairechew/hangry-no-mas/blob/master/hangrynomas.gif)
 View a live demo here: https://youtu.be/ck3EixPbkRw
 
 ## Reflection / Improvements
+While the main purpose of the app was accomplished, the following improvements could add to the UX of the page as a whole.
 
+1. The font of the resturants on the spinning wheel could be updated to look more modern
+2. The 'SPIN' button could be changed to a flat design
+3. There could be more search parameters in addition to cuisine and radius from zip code (price range, hours open...)
 
 ## Built With
 
