@@ -14,7 +14,7 @@ The pressure and time lost over making a simple decision as where to eat is an i
 If we provide an interactive, easy-to-use spinning wheel that chooses a restaurant for the user then prevent time lost during the day because users would rather spend time doing other activities than deciding where to eat.
 
 ## Iterations on Approach
-![https://github.com/mairechew/hangry-no-mas/blob/master/HNM-wireframe.png]
+![HNM-wirerame](https://github.com/mairechew/hangry-no-mas/blob/master/HNM-wireframe.png)
 
 ## Execution / Live Demo
 
