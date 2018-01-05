@@ -4,11 +4,25 @@ Hangry No Mas is an interactive restaurant decision-making game that searches by
 After pressing "spin", the wheel returns a random choice and congratulations the user on making a decision. 
 The user is also allowed to play again, which returns to the initial screen of collecting choice preferences. 
 
+
+## Problem
+
+Foodies / restaurant go-ers spend far too much time deliberating over where to eat. 
+The pressure and time lost over making a simple decision as where to eat is an issue. 
+
+## Hypothesis
+If we provide an interactive, easy-to-use spinning wheel that chooses a restaurant for the user then prevent time lost during the day because users would rather spend time doing other activities than deciding where to eat.
+
+## Iterations on Approach
+![https://github.com/mairechew/hangry-no-mas/blob/master/HNM-wireframe.png]
+
+## Execution / Live Demo
+
 ![HNM1](https://github.com/mairechew/hangry-no-mas/blob/master/hangrynomas.gif)
-
-## Live Demo
-
 View a live demo here: https://youtu.be/ck3EixPbkRw
+
+## Reflection / Improvements
+
 
 ## Built With
 
